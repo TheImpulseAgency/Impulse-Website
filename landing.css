@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* HEADER */
+  /**********/
+
+  header {
+    background-color: #ffffff;
+    color: #1790E9;
+    padding: 1rem 0;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    max-height: 50px;
+    margin-left: 0;
+  }
+  
+  header h1 {
+    font-family: 'Integral Bold',Helvetica,Arial,Lucida,sans-serif;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .header-icons {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .header-icons i {
+    margin-left: 1rem;
+  }
+  
+  .header-icons .fa-shopping-cart:hover {
+    color: #1790E9;
+  }
+  
+  .header-icons .fa-bars:hover {
+    color: #1790E9;
+  }
+
+  /* Responsive styling */
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    max-height: 40px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-icons {
+    font-size: 1.2rem;
+  }
+}
+  
+  /* HERO */
+  /**********/
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url('src/img/waves2.png');
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the last value (0.3) to control transparency */
+  }
+  
+  .hero-text {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-family: 'Integral Bold',Helvetica,Arial,Lucida,sans-serif;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #1790E9;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #1374c4;
+  }
+
+  /* DEALS */
+  /**********/
+  
+  .deals-section {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .deals-section .deals-subtext {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  
+  .deals-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Change from 'wrap' to 'nowrap' */
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto; /* Add this line */
+  }
+  
+  .deal-box {
+    flex: 1;
+    min-width: calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem); /* Add this line */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .deal-box {
+      max-width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .deal-box {
+      max-width: 100%;
+    }
+  }
+  
+.deals-section h2 {
+  font-family: 'Integral Demi Bold',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 600;
+  line-height: 1em;
+  font-size: 26px;
+}
+
+.deal-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.deal-box p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.deal-box .cta {
+  display: inline-block;
+  background-color: #1790E9;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.deal-box .cta:hover {
+  background-color: #1374c4;
+  transform: translateY(-3px);
+}
+
+.deal-box .cta:active {
+  transform: translateY(-1px);
+}
+
+  /* ENGAGMENT GROUPS */
+  /********************/
+  
+/* ... Other CSS ... */
+
+.engagement-groups {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.engagement-groups h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.engagement-groups .subtext {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: calc(33.333% - 1rem);
+  min-width: 250px;
+}
+
+.card img {
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* FOOTER */
+/**********/
+
+footer {
+  background-color: #1790E9;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
